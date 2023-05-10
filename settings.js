@@ -29,8 +29,8 @@ global.linkz = "https://youtube.com/@c4_ep" //your theme url which will be displ
 global.websitex = "www.telegram.com" //ur website to be displayed
 global.botscript = 'https://youtube.com' //script link
 global.themeemoji = "♥" //ur theme emoji
-global.packname = "⍣ا الوزير يروحي⍣" //ur sticker watermark packname
-global.author = "⍣01098906252⍣" //ur sticker watermark author
+global.packname = "⍣ا𝐖𝐎𝐍𝐃𝐄𝐑 🎭 | NiGHT⍣" //ur sticker watermark packname
+global.author = "⍣⍣" //ur sticker watermark author
 global.wm = "❤️Dazai ᗷOT❤️." //ur watermark
 
 // Other
