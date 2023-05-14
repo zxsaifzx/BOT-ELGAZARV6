@@ -215,7 +215,7 @@ ElgazarBot.sendMessage(anu.id, buttonMessage, {quoted:unicorndoc})
 ⋆ حد يبقي في جروب قمر زي جروب
 ${metadata.subject}.
 ꔹ━━━━━ꔹ
-⋆ ويغادر يحمار يلا غور فداهيه..🖤😂`
+⋆ يلا انقلع..🖤😂`
 let buttons = [
 {buttonId: `wkwkwk`, buttonText: {displayText: 'مع السلامه تخرج يجي غيرك😉✨'}, type: 1}
 ]
