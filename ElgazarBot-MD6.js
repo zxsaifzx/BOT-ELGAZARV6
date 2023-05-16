@@ -1328,7 +1328,7 @@ break
                 if (!isAdmins) throw mess.admin
 let teks = `══✪〘˙·٠${themeemoji}● منشن للكل ●${themeemoji}٠·˙〙✪══
  
- 🌿 *الرساله : ${q ? q : 'مفيش رساله'}*\n\n`
+ 🌿 *الرساله : ${q ? q : 'تعالو'}*\n\n`
                 for (let mem of participants) {
                 teks += `${themeemoji} @${mem.id.split('@')[0]}\n`
                 }
@@ -2005,7 +2005,7 @@ if (!text) return m.reply(`Example : ${prefix + command} Stay jb`)
 *┃🎲الوصف :* ${anulay.description}
 *┃🌿 الرابط :* ${anulay.url}
 
-┃اسم البوت : 📶 𝗕𝗢𝗧 𝗘𝗟𝗚𝗔𝗭𝗔𝗥 📶 
+┃اسم البوت : 📶 𝗕𝗢𝗧 DAZAI 📶 
 
 ┗━━━━━━━━━❊`,
                     footer: botname,
@@ -6966,7 +6966,7 @@ ElgazarBot.sendMessage(from, { text: `*${command}*\n\nالاسم : ${q}\nالا�
 					break
 					case 'شخصيتك':
 					if (!text) return m.reply(`منشن علي شخص, مثال : ${prefix + command} @abdallah`)
-					const xeony =['زفت','واطي','غبي','مطيع','غلبان','جدع','طيب','حبوب','جميل','حمار','محترم','شرموط','كلب','ورع']
+					const xeony =['زفت','واطي','غبي','مطيع','غلبان','جدع','طيب','حبوب','جميل','حمار','محترم','مسكين','كلب','ورع']
 					const taky = xeony[Math.floor(Math.random() * xeony.length)]
 					ElgazarBot.sendMessage(from, { text: `التحقق من الشخصيه : ${q}\nالاجابه : *${taky}*` }, { quoted: m })
 				     break
@@ -6985,68 +6985,8 @@ ElgazarBot.sendMessage(from, { text: `*${command}*\n\nالاسم : ${q}\nالا�
 					const sange = sangeh[Math.floor(Math.random() * sangeh.length)]
 ElgazarBot.sendMessage(from, { text: `*${command}*\n\nالاسم : ${q}\nالاجابه : *${sange}%*` }, { quoted: m })
 					break
-                    case 'احمق':
-      case 'بشع':
-      case 'جبان':
-      case 'جميل':
-      case 'حزين':
-      case 'حمار':
-      case 'خروف':
-      case 'ذكي':
-      case 'رقاص':
-      case 'زفت':
-      case 'سافل':
-      case 'شجاع':
-      case 'صادق':
-      case 'صنم':
-      case 'طيب':
-      case 'ظالم':
-      case 'عاقل':
-      case 'غامض':
-      case 'غبي':
-      case 'قرد':
-      case 'كاذب':
-      case 'كريه':
-      case '>':
-      case 'ماباع':
-      case 'مجنون':
-      case 'محبوب':
-      case 'محترم':
-      case 'محتال':
-      case 'مخادع':
-      case 'مخدوع':
-      case 'مسكين':
-      case 'مستفز':
-      case 'مضحك':
-      case 'مظلوم':
-      case 'مكروه':
-      case 'مؤدب':
-      case 'نجس':
-      case 'وصخ':
-      case 'ورع':
-      case 'شاذ':
-      case 'علق':
-      case 'متناك':
-      case 'خول':
-      case 'وسخ':
-      case 'مكروف':
-      case 'هطف':
-      case 'اهبل':
-      case 'معرص':
-      case 'عبقري':
-      case 'اهطل': {
-            if (!m.isGroup) return m.reply(`${mess.group}`)
-            let member = participants.map(u => u.id)
-            let me = m.sender
-            let jodoh = member[Math.floor(Math.random() * member.length)]
-            let jawab = `هذا الشخص اكبر *${command}* في الجروب @${jodoh.split('@')[0]}`
-            let ments = [me, jodoh]
-            let buttons = [
-                        { buttonId: 'oke', buttonText: { displayText: 'اتفق😂💔' }, type: 1 }
-                    ]
-                    await ElgazarBot.sendButtonText(m.chat, buttons, jawab, botname, m, {mentions: ments})
-            }
-            break
+    
+
 case 'id':{
             m.reply(from)
            }
@@ -7174,11 +7114,11 @@ const reply = `
     break
 case 'السورس': case 'script': {
 teks = `⋆ تم تطوير وبرمجه هذا السورس •
-⋆ بواسطه عبدالله محمد •
+⋆ بواسطه دازاي •
 ⋆ يمكنك التواصل مع المبرمج عبر التيلجرام ⤌⤈
- t.me/A_M_030
+ t.me/c4_ep
 تبعني عبر اليوتيوب ⤌⤈
-https://youtube.com/@ABDALLAH_MOHAMED
+https://youtube.com/@c4_ep
 واشترك وفعل الجرس وانتظر شروحات للبرمجه..🌍🔥`
 let buttons = [
 {buttonId: `owner`, buttonText: {displayText: 'المطور👤'}, type: 1}
@@ -7209,15 +7149,15 @@ teks = `• مرحبا ياروحي ⤌⤈
 • انا بوت واتس اسمي ⤌⤈
 𓆩 *${global.botname}* 𓆪
 • تم تطويري وبرمجتي •
-• بواسطه عبدالله محمد •
+• بواسطه دازاي •
 • اذا كنت تريد صنع بوت مماثل لهذا •
 يجب عليك الانظمام لهذه القناه وسماع الشروحات لتنصيب بوت وتس مثل هذا البوت
  
-قناة برمجه الجزار للشروحات
-https://youtube.com/@ABDALLAH_MOHAMED
+قناة برمجه دازاي للشروحات
+https://youtube.com/@c4_ep
 
 لينك شاتي 
-https://api.whatsapp.com/send?phone=+201098906252`
+https://api.whatsapp.com/send?phone=+962780398299`
 let buttons = [
 {buttonId: `owner`, buttonText: {displayText: 'المطور👤'}, type: 1}
 ]
@@ -9230,7 +9170,7 @@ teks = `•╗ مرحبا ياعزيزي ⤌⤈
 •╣ مميزات البوت كثيره جدا 
 •╝ ويعمل بجودة فائقه وعاليه
 𓍹————————————𓍻
-𓆩قائمة اوامر سورس الجزار𓆪 
+𓆩قائمة اوامر سورس دازاي𓆪 
 𓍹————————————𓍻
 ( .م1 ) ☞ اوامر الاعضاء
 ( .م2 ) ☞ اوامر المالك
