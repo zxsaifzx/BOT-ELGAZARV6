@@ -179,7 +179,7 @@ ${metadata.desc}
 ꔹ━━━━━ꔹ
 ⋆ من فضلك التزم بالقوانين..`
 let buttons = [
-{buttonId: `wkwwk`, buttonText: {displayText: 'نورت الجروب يحب♥✨'}, type: 1}
+{buttonId: `wkwwk`, buttonText: {displayText: 'نورت النقابة يحب♥✨'}, type: 1}
 ]
 let buttonMessage = {
 document: fs.readFileSync('./XeonMedia/theme/cheems.xlsx'),
@@ -212,7 +212,7 @@ ElgazarBot.sendMessage(anu.id, buttonMessage, {quoted:unicorndoc})
                     xeonbody = `⋆ مع السلامه 👋
 , @${xeonName.split("@")[0]}, 
 ꔹ━━━━━ꔹ
-⋆ حد يبقي في جروب قمر زي جروب
+⋆ حد بيكون في نقابة قمر زي نقابة
 ${metadata.subject}.
 ꔹ━━━━━ꔹ
 ⋆ يلا انقلع..🖤😂`
