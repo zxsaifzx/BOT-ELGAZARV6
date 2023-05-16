@@ -1328,7 +1328,7 @@ break
                 if (!isAdmins) throw mess.admin
 let teks = `══✪〘˙·٠${themeemoji}● منشن للكل ●${themeemoji}٠·˙〙✪══
  
- 🌿 *الرساله : ${q ? q : 'تعالو'}*\n\n`
+ 🌿 *الرساله : ${q ? q : 'مفيش رساله'}*\n\n`
                 for (let mem of participants) {
                 teks += `${themeemoji} @${mem.id.split('@')[0]}\n`
                 }
@@ -1522,9 +1522,9 @@ case 'group': case 'جروب': {
                 if (!isBotAdmins) throw mess.botAdmin
                 if (!isAdmins) throw mess.admin
                 if (args[0] === 'قفل'){
-                    await ElgazarBot.groupSettingUpdate(m.chat, 'announcement').then((res) => m.reply(`*تم قفل القروب*`)).catch((err) => m.reply(jsonformat(err)))
+                    await ElgazarBot.groupSettingUpdate(m.chat, 'announcement').then((res) => m.reply(`*تم قفل الجروب*`)).catch((err) => m.reply(jsonformat(err)))
                 } else if (args[0] === 'فتح'){
-                    await ElgazarBot.groupSettingUpdate(m.chat, 'not_announcement').then((res) => m.reply(`*تم فتح القروب*`)).catch((err) => m.reply(jsonformat(err)))
+                    await ElgazarBot.groupSettingUpdate(m.chat, 'not_announcement').then((res) => m.reply(`*تم فتح الجروب*`)).catch((err) => m.reply(jsonformat(err)))
                 } else {
                 let buttons = [
                         { buttonId: 'جروب فتح', buttonText: { displayText: 'فتح' }, type: 1 },
@@ -2005,7 +2005,7 @@ if (!text) return m.reply(`Example : ${prefix + command} Stay jb`)
 *┃🎲الوصف :* ${anulay.description}
 *┃🌿 الرابط :* ${anulay.url}
 
-┃اسم البوت : 📶 𝗕𝗢𝗧 DAZAI 📶 
+┃اسم البوت : 📶 𝗕𝗢𝗧 𝗘𝗟𝗚𝗔𝗭𝗔𝗥 📶 
 
 ┗━━━━━━━━━❊`,
                     footer: botname,
@@ -2409,6 +2409,17 @@ m.reply(mess.wait)
 teks1 = q.split("|")[0]
 teks2 = q.split("|")[1]
 maker.textpro("https://textpro.me/create-a-cool-graffiti-text-on-the-wall-1010.html", [
+    `${teks1}`,`${teks2}`])
+  .then((data) => ElgazarBot.sendMessage(m.chat, { image: { url: data }, caption: `Made by ${global.botname}` }, { quoted: m }))
+  .catch((err) => console.log(err));
+   break
+
+case 'pornhub2':
+if(!q) throw `Use ${prefix + command} text`
+m.reply(mess.wait)
+teks1 = q.split("|")[0]
+teks2 = q.split("|")[1]
+maker.textpro("https://textpro.me/pornhub-style-logo-online-generator-free-977.html", [
     `${teks1}`,`${teks2}`])
   .then((data) => ElgazarBot.sendMessage(m.chat, { image: { url: data }, caption: `Made by ${global.botname}` }, { quoted: m }))
   .catch((err) => console.log(err));
@@ -4947,8 +4958,8 @@ case 'dare': case 'تويت':
 "- ‏تجري حياتنا بما لاتشتهي أحلامنا ! ",
 "تحملين كل هذا الجمال، ‏ألا تتعبين؟",
 "البدايات للكل ، والثبات للصادقين ",
-"مُؤخرًا اقتنعت بالجملة هاي جدا •Private life always wins. ",
-" الافراط في التسامح بيخللي الناس تستهين بك🍍",
+"مُؤخرًا اقتنعت بالجملة دي جدا •Private life always wins. ",
+" الافراط في التسامح بيخللي الناس تستهين بيك🍍",
 "مهما كنت كويس فـَ إنت معرض لـِ الاستبدال.. ",
 "فخوره بنفسي جدًا رغم اني معملتش حاجه فـ حياتي تستحق الذكر والله . ",
 "‏إسمها ليلة القدر لأنها تُغير الأقدار ,اللهُمَّ غير قدري لحالٍ تُحبه وعوضني خير .. ",
@@ -6707,7 +6718,7 @@ var wbutsss = [
          ]
       let buttonzMessage = {
       image: {url:ud.data.url},
-       caption:  `خد✨!`,
+       caption:  `خد اهي✨!`,
       footer: `${global.botname}`,
           buttons: wbutsss,
      headerType: 4
@@ -6955,7 +6966,7 @@ ElgazarBot.sendMessage(from, { text: `*${command}*\n\nالاسم : ${q}\nالا�
 					break
 					case 'شخصيتك':
 					if (!text) return m.reply(`منشن علي شخص, مثال : ${prefix + command} @abdallah`)
-					const xeony =['زفت','واطي','غبي','مطيع','غلبان','جدع','طيب','حبوب','جميل','حمار','محترم','مسكين','كلب','ورع']
+					const xeony =['زفت','واطي','غبي','مطيع','غلبان','جدع','طيب','حبوب','جميل','حمار','محترم','شرموط','كلب','ورع']
 					const taky = xeony[Math.floor(Math.random() * xeony.length)]
 					ElgazarBot.sendMessage(from, { text: `التحقق من الشخصيه : ${q}\nالاجابه : *${taky}*` }, { quoted: m })
 				     break
@@ -6973,7 +6984,68 @@ ElgazarBot.sendMessage(from, { text: `*${command}*\n\nالاسم : ${q}\nالا�
 					const sangeh = ['1','2','3','4','5','6','7','8','9','10','11','12','13','14','15','16','17','18','19','20','21','22','23','24','25','26','27','28','29','30','31','32','33','34','35','36','37','38','39','40','41','42','43','44','45','46','47','48','49','50','51','52','53','54','55','56','57','58','59','60','61','62','63','64','65','66','67','68','69','70','71','72','73','74','75','76','77','78','79','80','81','82','83','84','85','86','87','88','89','90','91','92','93','94','95','96','97','98','99','100']
 					const sange = sangeh[Math.floor(Math.random() * sangeh.length)]
 ElgazarBot.sendMessage(from, { text: `*${command}*\n\nالاسم : ${q}\nالاجابه : *${sange}%*` }, { quoted: m })
-			
+					break
+                    case 'احمق':
+      case 'بشع':
+      case 'جبان':
+      case 'جميل':
+      case 'حزين':
+      case 'حمار':
+      case 'خروف':
+      case 'ذكي':
+      case 'رقاص':
+      case 'زفت':
+      case 'سافل':
+      case 'شجاع':
+      case 'صادق':
+      case 'صنم':
+      case 'طيب':
+      case 'ظالم':
+      case 'عاقل':
+      case 'غامض':
+      case 'غبي':
+      case 'قرد':
+      case 'كاذب':
+      case 'كريه':
+      case '>':
+      case 'ماباع':
+      case 'مجنون':
+      case 'محبوب':
+      case 'محترم':
+      case 'محتال':
+      case 'مخادع':
+      case 'مخدوع':
+      case 'مسكين':
+      case 'مستفز':
+      case 'مضحك':
+      case 'مظلوم':
+      case 'مكروه':
+      case 'مؤدب':
+      case 'نجس':
+      case 'وصخ':
+      case 'ورع':
+      case 'شاذ':
+      case 'علق':
+      case 'متناك':
+      case 'خول':
+      case 'وسخ':
+      case 'مكروف':
+      case 'هطف':
+      case 'اهبل':
+      case 'معرص':
+      case 'عبقري':
+      case 'اهطل': {
+            if (!m.isGroup) return m.reply(`${mess.group}`)
+            let member = participants.map(u => u.id)
+            let me = m.sender
+            let jodoh = member[Math.floor(Math.random() * member.length)]
+            let jawab = `هذا الشخص اكبر *${command}* في الجروب @${jodoh.split('@')[0]}`
+            let ments = [me, jodoh]
+            let buttons = [
+                        { buttonId: 'oke', buttonText: { displayText: 'اتفق😂💔' }, type: 1 }
+                    ]
+                    await ElgazarBot.sendButtonText(m.chat, buttons, jawab, botname, m, {mentions: ments})
+            }
             break
 case 'id':{
             m.reply(from)
@@ -7102,11 +7174,11 @@ const reply = `
     break
 case 'السورس': case 'script': {
 teks = `⋆ تم تطوير وبرمجه هذا السورس •
-⋆ بواسطه دازاي •
+⋆ بواسطه عبدالله محمد •
 ⋆ يمكنك التواصل مع المبرمج عبر التيلجرام ⤌⤈
- t.me/dazai
+ t.me/A_M_030
 تبعني عبر اليوتيوب ⤌⤈
-https://youtube.com/@c4_ep
+https://youtube.com/@ABDALLAH_MOHAMED
 واشترك وفعل الجرس وانتظر شروحات للبرمجه..🌍🔥`
 let buttons = [
 {buttonId: `owner`, buttonText: {displayText: 'المطور👤'}, type: 1}
@@ -7137,8 +7209,15 @@ teks = `• مرحبا ياروحي ⤌⤈
 • انا بوت واتس اسمي ⤌⤈
 𓆩 *${global.botname}* 𓆪
 • تم تطويري وبرمجتي •
-• بواسطه دازاي •
+• بواسطه عبدالله محمد •
+• اذا كنت تريد صنع بوت مماثل لهذا •
+يجب عليك الانظمام لهذه القناه وسماع الشروحات لتنصيب بوت وتس مثل هذا البوت
+ 
+قناة برمجه الجزار للشروحات
+https://youtube.com/@ABDALLAH_MOHAMED
 
+لينك شاتي 
+https://api.whatsapp.com/send?phone=+201098906252`
 let buttons = [
 {buttonId: `owner`, buttonText: {displayText: 'المطور👤'}, type: 1}
 ]
@@ -7150,8 +7229,8 @@ footer: `${botname}`,
 buttons: buttons,
 headerType: 4,
 contextInfo:{externalAdReply:{
-title:"Dazai ʙᴏт",
-body: "سورس دازاي", 
+title:"ᴇʟɢᴀᴢᴀʀ ʙᴏт",
+body: "سورس الجزار", 
 thumbnail: fs.readFileSync("XeonMedia/theme/cheemspic.jpg"),
 mediaType:1,
 mediaUrl: 'https://telegra.ph/file/e6259010eb14f0e5fb98d.jpg',
@@ -8319,15 +8398,15 @@ case 'textshot': {
 
 /*case 'tqtt': 
 throw `Thanks me
-https://youtube.com/@c4_ep
+https://youtube.com/@YOUSSEF-ALSOLTN
 
 
-0780398299
+201227179105
 
 
 YoUsSef Al SoLtAn
 
-https://www.instagram.com/c4_ep
+https://www.instagram.com/youssef.alsoltan_
 `
 
 break*/
@@ -8360,8 +8439,8 @@ footer: `${botname}`,
 buttons: buttons,
 headerType: 4,
 contextInfo:{externalAdReply:{
-title:"dazai ʙᴏт",
-body: "سورس دازاي", 
+title:"ᴇʟɢᴀᴢᴀʀ ʙᴏт",
+body: "سورس الجزار", 
 thumbnail: fs.readFileSync("XeonMedia/theme/cheemspic.jpg"),
 mediaType:1,
 mediaUrl: 'https://telegra.ph/file/e6259010eb14f0e5fb98d.jpg',
@@ -8418,8 +8497,8 @@ footer: `${botname}`,
 buttons: buttons,
 headerType: 4,
 contextInfo:{externalAdReply:{
-title:"dazai ʙᴏт",
-body: "سورس دازاي", 
+title:"ᴇʟɢᴀᴢᴀʀ ʙᴏт",
+body: "سورس الجزار", 
 thumbnail: fs.readFileSync("XeonMedia/theme/cheemspic.jpg"),
 mediaType:1,
 mediaUrl: 'https://telegra.ph/file/e6259010eb14f0e5fb98d.jpg',
@@ -8503,8 +8582,8 @@ footer: `${botname}`,
 buttons: buttons,
 headerType: 4,
 contextInfo:{externalAdReply:{
-title:"dazai ʙᴏт",
-body: "سورس دازاي", 
+title:"ᴇʟɢᴀᴢᴀʀ ʙᴏт",
+body: "سورس الجزار", 
 thumbnail: fs.readFileSync("XeonMedia/theme/cheemspic.jpg"),
 mediaType:1,
 mediaUrl: 'https://telegra.ph/file/e6259010eb14f0e5fb98d.jpg',
@@ -8570,8 +8649,8 @@ footer: `${botname}`,
 buttons: buttons,
 headerType: 4,
 contextInfo:{externalAdReply:{
-title:"dazai ʙᴏт",
-body: "سورس دازاي", 
+title:"ᴇʟɢᴀᴢᴀʀ ʙᴏт",
+body: "سورس الجزار", 
 thumbnail: fs.readFileSync("XeonMedia/theme/cheemspic.jpg"),
 mediaType:1,
 mediaUrl: 'https://telegra.ph/file/e6259010eb14f0e5fb98d.jpg',
@@ -8631,8 +8710,8 @@ footer: `${botname}`,
 buttons: buttons,
 headerType: 4,
 contextInfo:{externalAdReply:{
-title:"dazai ʙᴏт",
-body: "سورس دازاي", 
+title:"ᴇʟɢᴀᴢᴀʀ ʙᴏт",
+body: "سورس الجزار", 
 thumbnail: fs.readFileSync("XeonMedia/theme/cheemspic.jpg"),
 mediaType:1,
 mediaUrl: 'https://telegra.ph/file/e6259010eb14f0e5fb98d.jpg',
@@ -9151,7 +9230,7 @@ teks = `•╗ مرحبا ياعزيزي ⤌⤈
 •╣ مميزات البوت كثيره جدا 
 •╝ ويعمل بجودة فائقه وعاليه
 𓍹————————————𓍻
-𓆩قائمة اوامر سورس دازاي
+𓆩قائمة اوامر سورس الجزار𓆪 
 𓍹————————————𓍻
 ( .م1 ) ☞ اوامر الاعضاء
 ( .م2 ) ☞ اوامر المالك
@@ -9175,8 +9254,8 @@ footer: `${botname}`,
 buttons: buttons,
 headerType: 4,
 contextInfo:{externalAdReply:{
-title:"dazai ʙᴏт",
-body: "سورس دازاي", 
+title:"ᴇʟɢᴀᴢᴀʀ ʙᴏт",
+body: "سورس الجزار", 
 thumbnail: fs.readFileSync("XeonMedia/theme/cheemspic.jpg"),
 mediaType:1,
 mediaUrl: 'https://telegra.ph/file/e6259010eb14f0e5fb98d.jpg',
